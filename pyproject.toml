@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "incolumepy.pytest"
+version = "0.1.0-a0"
+description = ""
+authors = ["Britodfbr <britodfbr@gmail.com>"]
+packages=[
+    {include = 'incolumepy/example_pytest', from='src'},
+]
+ 
+license = "MIT"
+readme = "README.md"
+homepage = ""
+repository = ""
+keywords = [""]
+classifiers = [
+  "License :: Free For Educational Use",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Topic :: Education",
+  "Topic :: Education:: Testing",
+  "Topic :: Utilities"
+]
+include = [
+  "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
